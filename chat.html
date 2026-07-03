@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="POST">
+
+<input type="text"
+       name="message"
+       class="form-control"
+       placeholder="Ask about exams">
+
+<br>
+
+<button class="btn btn-primary">
+Send
+</button>
+
+</form>
+
+<hr>
+
+<pre>{{ answer }}</pre>
+
+{% endblock %}
